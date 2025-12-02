@@ -39,7 +39,8 @@ const Upload: React.FC = () => {
         } catch (err) {
           console.error(err);
           updateFileStatus(fileId, OCRStatus.FAILED);
-          setErrorMsg("Gemini API failed to parse the document. Ensure it's a clear bank statement.");
+          const message = err instanceof Error ? err.message : "Gemini API failed to parse the document.";
+          setErrorMsg(message);
         }
       };
       reader.readAsDataURL(file);
