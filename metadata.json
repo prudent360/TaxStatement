@@ -1,0 +1,5 @@
+{
+  "name": "TaxStatement OCR",
+  "description": "A modern SaaS for Nigerian users to extract bank statement transactions via Gemini OCR and estimate Personal Income Tax based on 2026 rules.",
+  "requestFramePermissions": []
+}
